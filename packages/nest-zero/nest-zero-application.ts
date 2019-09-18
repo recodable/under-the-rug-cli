@@ -8,7 +8,7 @@ import {
 import { RoutesResolver } from './routes-resolver';
 
 export class NestZeroApplication extends NestApplicationContext {
-  private cli = commander;
+  private instance = commander;
   private routesResolver: RoutesResolver;
 
   constructor(
@@ -27,10 +27,15 @@ export class NestZeroApplication extends NestApplicationContext {
 
   public async execute(args: any[]) {
     await this.initialize();
-    this.cli.parse(args);
+    this.instance.parse(args);
   }
 
   private async initialize() {
-    this.routesResolver.resolve();
+    this.routesResolver.resolve(this);
+  }
+
+  public addCommand(signature: string, controllerName: string) {
+    this.instance.command(signature).action(this.get(controllerName).run);
+    return this;
   }
 }
