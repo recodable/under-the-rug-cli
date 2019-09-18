@@ -6,6 +6,6 @@ export class AppController {
   constructor(private readonly appService: AppService) {}
 
   run() {
-    console.log(this.appService.getHello());
+    this.appService.cleanup();
   }
 }
