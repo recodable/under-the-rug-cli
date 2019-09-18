@@ -1,23 +1,10 @@
-import { INestApplication } from '@nestjs/common';
-import { NestFactoryStatic } from '@nestjs/core/nest-factory';
-import { NestApplicationOptions } from '@nestjs/common/interfaces/nest-application-options.interface';
-import { AbstractHttpAdapter } from '@nestjs/core';
-import { NestZeroAdapter } from './adapter';
+import { NestZeroApplication } from './nest-zero-application';
+import { NestFactory } from '@nestjs/core';
 
-interface INestZeroApplication extends INestApplication {
-  execute(args: any[]);
-}
-
-export class NestZeroFactoryStatic extends NestFactoryStatic {
-  public async createCLI<T extends INestZeroApplication = INestZeroApplication>(
-    module: any,
-    options?: NestApplicationOptions,
-  ): Promise<T> {
-    return this.create(module, this.createCLIAdapter(), options);
-  }
-
-  private createCLIAdapter(): AbstractHttpAdapter {
-    return new NestZeroAdapter();
+export class NestZeroFactoryStatic {
+  public async create(module: any, options?): Promise<NestZeroApplication> {
+    const context = await NestFactory.createApplicationContext(module);
+    return new NestZeroApplication(context);
   }
 }
 
