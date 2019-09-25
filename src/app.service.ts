@@ -15,9 +15,8 @@ export class AppService {
   }
 
   get hasFile(): boolean {
-    return !!readdirSync(process.env.HOME + '/Desktop').filter(
-      file => !file.match(/^./),
-    ).length;
+    return !!readdirSync(this.desktopPath).filter(file => !file.match(/^\./))
+      .length;
   }
 
   public cleanup() {
