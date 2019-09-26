@@ -36,7 +36,9 @@ export class NestZeroApplication extends NestApplicationContext {
 
   public addCommand(signature: string, controllerName: string) {
     const controller = this.get(controllerName);
-    this.instance.command(signature).action(controller.run.bind(controller));
+    (signature ? this.instance.command(signature) : this.instance).action(
+      controller.run.bind(controller),
+    );
     return this;
   }
 }
