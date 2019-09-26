@@ -1,4 +1,4 @@
-import { NestZeroFactory } from '../packages/nest-zero';
+import { NestZeroFactory } from 'nest-zero';
 import { AppModule } from './app.module';
 
 async function bootstrap() {

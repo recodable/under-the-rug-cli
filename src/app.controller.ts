@@ -1,5 +1,5 @@
-import { Controller } from '../packages/nest-zero';
-import { Command } from '../packages/nest-zero';
+import { Controller } from 'nest-zero';
+import { Command } from 'nest-zero';
 import { AppService } from './app.service';
 
 @Controller()
