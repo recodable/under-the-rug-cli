@@ -58,9 +58,10 @@ export class RoutesResolver {
   ) {
     routes.forEach(instanceWrapper => {
       const { instance, metatype } = instanceWrapper;
+      const prefix = Reflect.getMetadata(SIGNATURE, metatype);
       this.scanForPaths(instance).forEach(route => {
         const controllerName = metatype.name;
-        app.addCommand(route, controllerName);
+        app.addCommand({ ...route, prefix }, controllerName);
       });
     });
     // routes.forEach(instanceWrapper => {

@@ -36,10 +36,10 @@ export class NestZeroApplication extends NestApplicationContext {
 
   public addCommand(route, controllerName: string) {
     const controller = this.get(controllerName);
-    (route.routePath
-      ? this.instance.command(route.routePath)
-      : this.instance
-    ).action(controller[route.methodName].bind(controller));
+    const signature = [route.prefix, route.routePath].filter(v => v).join(':');
+    (signature ? this.instance.command(signature) : this.instance).action(
+      controller[route.methodName].bind(controller),
+    );
     return this;
   }
 }
