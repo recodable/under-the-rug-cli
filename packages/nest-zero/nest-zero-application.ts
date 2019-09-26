@@ -34,11 +34,12 @@ export class NestZeroApplication extends NestApplicationContext {
     this.routesResolver.resolve(this);
   }
 
-  public addCommand(signature: string, controllerName: string) {
+  public addCommand(route, controllerName: string) {
     const controller = this.get(controllerName);
-    (signature ? this.instance.command(signature) : this.instance).action(
-      controller.run.bind(controller),
-    );
+    (route.routePath
+      ? this.instance.command(route.routePath)
+      : this.instance
+    ).action(controller[route.methodName].bind(controller));
     return this;
   }
 }
