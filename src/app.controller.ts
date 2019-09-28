@@ -10,4 +10,9 @@ export class AppController {
   clean() {
     this.appService.cleanup();
   }
+
+  // @Command('add <path>')
+  // add(path: string) {
+  //   this.appService.add(path);
+  // }
 }

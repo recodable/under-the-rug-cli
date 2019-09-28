@@ -1,37 +1,54 @@
 import { Injectable } from '@nestjs/common';
 import { execSync } from 'child_process';
 import { existsSync, readdirSync } from 'fs';
+import { DatabaseService } from './database/database.service';
 
 @Injectable()
 export class AppService {
-  desktopPath = `${process.env.HOME}/Desktop`;
+  private readonly trashDir = '.tmp';
+  private readonly desktopPath = `${process.env.HOME}/Desktop`;
 
-  get trashPath(): string {
-    return `${this.desktopPath}/.tmp`;
+  constructor(private readonly db: DatabaseService) {}
+
+  trashPath(path: string): string {
+    return `${path}/${this.trashDir}`;
   }
 
-  get needInitialization(): boolean {
-    return !existsSync(this.trashPath);
+  needInitialization(path: string): boolean {
+    return !existsSync(this.trashPath(path));
   }
 
-  get hasFile(): boolean {
+  hasFile(path: string): boolean {
     return !!readdirSync(this.desktopPath).filter(file => !file.match(/^\./))
       .length;
   }
 
   public cleanup() {
-    if (this.needInitialization) {
-      this.init();
-    }
-    if (!this.hasFile) {
-      return console.log('No file to clean up!');
-    }
-    execSync(`mv ${this.desktopPath}/* ${this.trashPath}`);
-    console.log('Cleanup completed!');
+    this.db.instance
+      .get('targetDirs')
+      .value()
+      .forEach(path => {
+        if (this.needInitialization(path)) {
+          this.init(path);
+        }
+        if (!this.hasFile(path)) {
+          return console.log('No file to clean up!');
+        }
+        execSync(`mv ${path}/* ${this.trashPath}`);
+        console.log('Cleanup completed!');
+      });
   }
 
-  private init() {
-    execSync(`mkdir ${this.trashPath}`);
+  public add(path: string) {
+    this.db.instance
+      .get('targetDirs')
+      .push(path)
+      .write();
+    console.log(`${path} added!`);
+  }
+
+  private init(path: string) {
+    execSync(`mkdir ${this.trashPath(path)}`);
     console.log('Initialization completed');
   }
 }
