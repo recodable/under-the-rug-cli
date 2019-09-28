@@ -17,7 +17,7 @@ import * as path from 'path';
     {
       provide: DatabaseService,
       useValue: new DatabaseService({
-        targetDirs: [`${process.env.HOME}/Desktop`],
+        targetPaths: [`${process.env.HOME}/Desktop`],
       }),
     },
   ],

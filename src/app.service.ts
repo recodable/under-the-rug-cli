@@ -25,7 +25,7 @@ export class AppService {
 
   public cleanup() {
     this.db.instance
-      .get('targetDirs')
+      .get('targetPaths')
       .value()
       .forEach(path => {
         if (this.needInitialization(path)) {
@@ -41,7 +41,7 @@ export class AppService {
 
   public add(path: string) {
     this.db.instance
-      .get('targetDirs')
+      .get('targetPaths')
       .push(path)
       .write();
     console.log(`${path} added!`);
