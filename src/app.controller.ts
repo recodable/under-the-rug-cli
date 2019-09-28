@@ -6,13 +6,13 @@ import { AppService } from './app.service';
 export class AppController {
   constructor(private readonly appService: AppService) {}
 
-  @Command()
+  @Command('clean')
   clean() {
     this.appService.cleanup();
   }
 
-  // @Command('add <path>')
-  // add(path: string) {
-  //   this.appService.add(path);
-  // }
+  @Command('add <path>')
+  add(path: string) {
+    this.appService.add(path);
+  }
 }
