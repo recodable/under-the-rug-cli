@@ -1,5 +1,5 @@
 import { NestContainer, ApplicationConfig, NestApplicationContext } from '@nestjs/core';
-export declare class NestZeroApplication extends NestApplicationContext {
+export declare class KhalaApplication extends NestApplicationContext {
     private readonly config;
     private instance;
     private routesResolver;

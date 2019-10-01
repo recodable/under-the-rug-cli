@@ -8,4 +8,4 @@ function Controller(options = '') {
     };
 }
 exports.Controller = Controller;
-//# sourceMappingURL=nest-zero-controller.decorator.js.map
+//# sourceMappingURL=khala-controller.decorator.js.map

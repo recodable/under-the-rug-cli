@@ -27,7 +27,7 @@
     "commander": "^3.0.1",
     "dotenv": "^8.1.0",
     "lowdb": "^1.0.0",
-    "nest-zero": "file:packages/nest-zero",
+    "khala": "file:packages/khala",
     "reflect-metadata": "^0.1.13",
     "rimraf": "^2.6.2",
     "rxjs": "^6.3.3"

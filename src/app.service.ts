@@ -19,8 +19,7 @@ export class AppService {
   }
 
   hasFile(path: string): boolean {
-    return !!readdirSync(this.desktopPath).filter(file => !file.match(/^\./))
-      .length;
+    return !!readdirSync(path).filter(file => !file.match(/^\./)).length;
   }
 
   public cleanup() {
@@ -34,7 +33,7 @@ export class AppService {
         if (!this.hasFile(path)) {
           return console.log('No file to clean up!');
         }
-        execSync(`mv ${path}/* ${this.trashPath}`);
+        execSync(`mv ${path}/* ${this.trashPath(path)}`);
         console.log('Cleanup completed!');
       });
   }

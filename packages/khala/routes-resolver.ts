@@ -4,7 +4,7 @@ import { Injector } from '@nestjs/core/injector/injector';
 import { Controller } from '@nestjs/common/interfaces/controllers/controller.interface';
 import { InstanceWrapper } from '@nestjs/core/injector/instance-wrapper';
 import { SIGNATURE } from './constants';
-import { NestZeroApplication } from './nest-zero-application';
+import { KhalaApplication } from './khala-application';
 import { isUndefined } from '@nestjs/common/utils/shared.utils';
 
 export class RoutesResolver {
@@ -40,7 +40,7 @@ export class RoutesResolver {
     // );
   }
 
-  public resolve(app: NestZeroApplication) {
+  public resolve(app: KhalaApplication) {
     const modules = this.container.getModules();
     modules.forEach(({ controllers, metatype }, moduleName) => {
       // let path = metatype
@@ -54,7 +54,7 @@ export class RoutesResolver {
   public registerRouters(
     routes: Map<string, InstanceWrapper<Controller>>,
     moduleName: string,
-    app: NestZeroApplication,
+    app: KhalaApplication,
   ) {
     routes.forEach(instanceWrapper => {
       const { instance, metatype } = instanceWrapper;

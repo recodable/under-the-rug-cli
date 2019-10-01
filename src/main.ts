@@ -1,8 +1,8 @@
-import { NestZeroFactory } from 'nest-zero';
+import { KhalaFactory } from 'khala';
 import { AppModule } from './app.module';
 
 async function bootstrap() {
-  const app = await NestZeroFactory.create(AppModule);
+  const app = await KhalaFactory.create(AppModule);
   await app.execute(process.argv);
 }
 bootstrap();

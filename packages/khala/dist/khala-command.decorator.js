@@ -7,4 +7,4 @@ function Command(options = '') {
     };
 }
 exports.Command = Command;
-//# sourceMappingURL=nest-zero-command.decorator.js.map
+//# sourceMappingURL=khala-command.decorator.js.map

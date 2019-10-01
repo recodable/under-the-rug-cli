@@ -1,16 +1,16 @@
-import { NestZeroApplication } from './nest-zero-application';
+import { KhalaApplication } from './khala-application';
 import { NestFactory, NestContainer, ApplicationConfig } from '@nestjs/core';
 import { InstanceLoader } from '@nestjs/core/injector/instance-loader';
 import { DependenciesScanner } from '@nestjs/core/scanner';
 import { MetadataScanner } from '@nestjs/core/metadata-scanner';
 import { ExceptionsZone } from '@nestjs/core/errors/exceptions-zone';
 
-export class NestZeroFactoryStatic {
-  public async create(module: any, options?): Promise<NestZeroApplication> {
+export class KhalaFactoryStatic {
+  public async create(module: any, options?): Promise<KhalaApplication> {
     const config = new ApplicationConfig();
     const container = new NestContainer();
     await this.initialize(module, container, config);
-    const instance = new NestZeroApplication(container, config, options);
+    const instance = new KhalaApplication(container, config, options);
     return instance;
   }
 
@@ -37,4 +37,4 @@ export class NestZeroFactoryStatic {
   }
 }
 
-export const NestZeroFactory = new NestZeroFactoryStatic();
+export const KhalaFactory = new KhalaFactoryStatic();

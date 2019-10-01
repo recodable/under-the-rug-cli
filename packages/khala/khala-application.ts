@@ -7,7 +7,7 @@ import {
 } from '@nestjs/core';
 import { RoutesResolver } from './routes-resolver';
 
-export class NestZeroApplication extends NestApplicationContext {
+export class KhalaApplication extends NestApplicationContext {
   private instance = commander;
   private routesResolver: RoutesResolver;
 

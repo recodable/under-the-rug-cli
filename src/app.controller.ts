@@ -1,5 +1,5 @@
-import { Controller } from 'nest-zero';
-import { Command } from 'nest-zero';
+import { Controller } from 'khala';
+import { Command } from 'khala';
 import { AppService } from './app.service';
 
 @Controller()

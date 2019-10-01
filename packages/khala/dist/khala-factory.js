@@ -8,19 +8,19 @@ var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, ge
     });
 };
 Object.defineProperty(exports, "__esModule", { value: true });
-const nest_zero_application_1 = require("./nest-zero-application");
+const khala_application_1 = require("./khala-application");
 const core_1 = require("@nestjs/core");
 const instance_loader_1 = require("@nestjs/core/injector/instance-loader");
 const scanner_1 = require("@nestjs/core/scanner");
 const metadata_scanner_1 = require("@nestjs/core/metadata-scanner");
 const exceptions_zone_1 = require("@nestjs/core/errors/exceptions-zone");
-class NestZeroFactoryStatic {
+class KhalaFactoryStatic {
     create(module, options) {
         return __awaiter(this, void 0, void 0, function* () {
             const config = new core_1.ApplicationConfig();
             const container = new core_1.NestContainer();
             yield this.initialize(module, container, config);
-            const instance = new nest_zero_application_1.NestZeroApplication(container, config, options);
+            const instance = new khala_application_1.KhalaApplication(container, config, options);
             return instance;
         });
     }
@@ -41,6 +41,6 @@ class NestZeroFactoryStatic {
         });
     }
 }
-exports.NestZeroFactoryStatic = NestZeroFactoryStatic;
-exports.NestZeroFactory = new NestZeroFactoryStatic();
-//# sourceMappingURL=nest-zero-factory.js.map
+exports.KhalaFactoryStatic = KhalaFactoryStatic;
+exports.KhalaFactory = new KhalaFactoryStatic();
+//# sourceMappingURL=khala-factory.js.map

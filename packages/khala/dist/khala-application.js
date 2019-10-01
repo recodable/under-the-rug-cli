@@ -11,7 +11,7 @@ Object.defineProperty(exports, "__esModule", { value: true });
 const commander = require("commander");
 const core_1 = require("@nestjs/core");
 const routes_resolver_1 = require("./routes-resolver");
-class NestZeroApplication extends core_1.NestApplicationContext {
+class KhalaApplication extends core_1.NestApplicationContext {
     constructor(container, config, options) {
         super(container);
         this.config = config;
@@ -36,5 +36,5 @@ class NestZeroApplication extends core_1.NestApplicationContext {
         return this;
     }
 }
-exports.NestZeroApplication = NestZeroApplication;
-//# sourceMappingURL=nest-zero-application.js.map
+exports.KhalaApplication = KhalaApplication;
+//# sourceMappingURL=khala-application.js.map
