@@ -63,5 +63,6 @@
     },
     "coverageDirectory": "../coverage",
     "testEnvironment": "node"
-  }
+  },
+  "prettier": "@recodable/pretier-config"
 }
