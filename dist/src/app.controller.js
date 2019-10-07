@@ -24,13 +24,19 @@ let AppController = class AppController {
     }
 };
 __decorate([
-    khala_2.Command('clean'),
+    khala_2.Command({
+        signature: 'clean',
+        description: 'Clean up all the targeted directory.',
+    }),
     __metadata("design:type", Function),
     __metadata("design:paramtypes", []),
     __metadata("design:returntype", void 0)
 ], AppController.prototype, "clean", null);
 __decorate([
-    khala_2.Command('add <path>'),
+    khala_2.Command({
+        signature: 'add <path>',
+        description: 'Add a directory path to the target directory list.'
+    }),
     __metadata("design:type", Function),
     __metadata("design:paramtypes", [String]),
     __metadata("design:returntype", void 0)

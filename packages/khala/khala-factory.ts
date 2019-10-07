@@ -4,11 +4,13 @@ import { InstanceLoader } from '@nestjs/core/injector/instance-loader';
 import { DependenciesScanner } from '@nestjs/core/scanner';
 import { MetadataScanner } from '@nestjs/core/metadata-scanner';
 import { ExceptionsZone } from '@nestjs/core/errors/exceptions-zone';
+import { Logger } from '@nestjs/common';
 
 export class KhalaFactoryStatic {
   public async create(module: any, options?): Promise<KhalaApplication> {
     const config = new ApplicationConfig();
     const container = new NestContainer();
+    Logger.overrideLogger(options.logger)
     await this.initialize(module, container, config);
     const instance = new KhalaApplication(container, config, options);
     return instance;

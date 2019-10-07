@@ -1,4 +1,4 @@
-#!/usr/bin/env node
+#!/usr/local/bin/node
 "use strict";
 var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, generator) {
     return new (P || (P = Promise))(function (resolve, reject) {
@@ -13,7 +13,8 @@ const khala_1 = require("khala");
 const app_module_1 = require("./app.module");
 function bootstrap() {
     return __awaiter(this, void 0, void 0, function* () {
-        const app = yield khala_1.KhalaFactory.create(app_module_1.AppModule);
+        console.log(process.env.NODE_ENV);
+        const app = yield khala_1.KhalaFactory.create(app_module_1.AppModule, { logger: false });
         yield app.execute(process.argv);
     });
 }

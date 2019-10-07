@@ -14,11 +14,13 @@ const instance_loader_1 = require("@nestjs/core/injector/instance-loader");
 const scanner_1 = require("@nestjs/core/scanner");
 const metadata_scanner_1 = require("@nestjs/core/metadata-scanner");
 const exceptions_zone_1 = require("@nestjs/core/errors/exceptions-zone");
+const common_1 = require("@nestjs/common");
 class KhalaFactoryStatic {
     create(module, options) {
         return __awaiter(this, void 0, void 0, function* () {
             const config = new core_1.ApplicationConfig();
             const container = new core_1.NestContainer();
+            common_1.Logger.overrideLogger(options.logger);
             yield this.initialize(module, container, config);
             const instance = new khala_application_1.KhalaApplication(container, config, options);
             return instance;

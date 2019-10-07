@@ -126,8 +126,8 @@
         "signature": "63b66918290d794f73832a6d0325be5026236674fe8c0cb0b68d162000d7bbe8"
       },
       "/users/stevenyung/code/under-the-rug-cli/packages/khala/constants.ts": {
-        "version": "5d8099394a15ede7fc349f35c041dd65fb84c4356506a3d2426f712174ba09ad",
-        "signature": "0b8d553e7181745fb23bcc86ce2f7d4d7cd037e6b896362216059518ca6e6a48"
+        "version": "51b8e7678a33e939b8b71ec5d8f83153f08598f0126c0ba03a927e105210e925",
+        "signature": "8eb922684ab1c9e734b6d9dbece9b5e30bf74ed497dc9b14a6234d92a9837475"
       },
       "/users/stevenyung/code/under-the-rug-cli/node_modules/reflect-metadata/index.d.ts": {
         "version": "8d6d51a5118d000ed3bfe6e1dd1335bebfff3fef23cd2af2f84a24d30f90cc90",
@@ -1218,11 +1218,11 @@
         "signature": "26b7541d35dacd3f5bf5c065d4291499af0b9939b89b1a1721a18ee3eef2f31a"
       },
       "/users/stevenyung/code/under-the-rug-cli/packages/khala/routes-resolver.ts": {
-        "version": "637fe9316071ad41760189b2cfc3e9fa2aacc4c36204ec37ad154c32144843c4",
-        "signature": "f3c2635bd2bc7ad4fa5428b2a86cfe73497f99655a633cae90de76aecc6d22e0"
+        "version": "96ae2ce29f1a64c9d434d66d0ceae977680b12bc4ca48d3b2381a105bdd415ab",
+        "signature": "62297172bff57313f205ba5afe8182fe16cfe8cf7cdf090c423a26658a7e56f7"
       },
       "/users/stevenyung/code/under-the-rug-cli/packages/khala/khala-application.ts": {
-        "version": "4a1537ed2be19295e39f3b99852a181a049679c22bf00df93a37b4e1f87f4b17",
+        "version": "a7e1db2a8b26bb46009ad174dde8e3761838bcc1a4ba5da8d014fab569b648d6",
         "signature": "cce6e6d33216d01007a4c4a34b47d26c75b096aabddffdafe58e438fd9b568a2"
       },
       "/users/stevenyung/code/under-the-rug-cli/node_modules/@nestjs/core/injector/instance-loader.d.ts": {
@@ -1238,7 +1238,7 @@
         "signature": "2e1f5b8537a4c411d551c421ab3af9d1c60fb29e4d4116cc493a6b3ef9ea5239"
       },
       "/users/stevenyung/code/under-the-rug-cli/packages/khala/khala-factory.ts": {
-        "version": "a45cbb1e5ee8bca9c6e97e6b4d6c95ee84668540fb34040d57e2d348bb3b013d",
+        "version": "46fb020ae6a2e551623c41038d5e8428dcc268184883e907d16570a73e68057c",
         "signature": "b96204745951228a0cdc822456c992a4a7508c31db64515219cdf03657a3b663"
       },
       "/users/stevenyung/code/under-the-rug-cli/packages/khala/khala-controller.decorator.ts": {
@@ -1246,16 +1246,16 @@
         "signature": "8cea2e78bd80a7d87a54eeeda009bb533e84ea6e2f447b4491bed3f0586acda2"
       },
       "/users/stevenyung/code/under-the-rug-cli/packages/khala/khala-command.decorator.ts": {
-        "version": "48cf6ddd02e13589789786da795ddcc63eebfea604aac32f11bd8ebee975e912",
-        "signature": "b2fd8b711b4d5884c46cfaca5e805fa01336049d80d5fd18b2f2eb8e4bd0cad6"
+        "version": "c510869123cbf77d0b9dc4eefaa16d0cfee74d45fc68668d0add38e1db4bd66a",
+        "signature": "e084da6d8d5e275188bc379fbdfd7c958bcd583690526dcb7e1bacaa90779858"
       },
       "/users/stevenyung/code/under-the-rug-cli/packages/khala/index.ts": {
         "version": "45e93ec24911a69e0edc593c9fb8c6396818cefbfacaac1338dd51b0dd41535e",
         "signature": "f16ad3d465b5296d1f7d0e01724f71c22fa63b2b79b211dec916c4f93ac7dcc2"
       },
       "/users/stevenyung/code/under-the-rug-cli/packages/khala/dist/constants.d.ts": {
-        "version": "0b8d553e7181745fb23bcc86ce2f7d4d7cd037e6b896362216059518ca6e6a48",
-        "signature": "0b8d553e7181745fb23bcc86ce2f7d4d7cd037e6b896362216059518ca6e6a48"
+        "version": "8eb922684ab1c9e734b6d9dbece9b5e30bf74ed497dc9b14a6234d92a9837475",
+        "signature": "8eb922684ab1c9e734b6d9dbece9b5e30bf74ed497dc9b14a6234d92a9837475"
       },
       "/users/stevenyung/code/under-the-rug-cli/packages/khala/dist/khala-application.d.ts": {
         "version": "cce6e6d33216d01007a4c4a34b47d26c75b096aabddffdafe58e438fd9b568a2",
@@ -1270,16 +1270,16 @@
         "signature": "8cea2e78bd80a7d87a54eeeda009bb533e84ea6e2f447b4491bed3f0586acda2"
       },
       "/users/stevenyung/code/under-the-rug-cli/packages/khala/dist/khala-command.decorator.d.ts": {
-        "version": "b2fd8b711b4d5884c46cfaca5e805fa01336049d80d5fd18b2f2eb8e4bd0cad6",
-        "signature": "b2fd8b711b4d5884c46cfaca5e805fa01336049d80d5fd18b2f2eb8e4bd0cad6"
+        "version": "e084da6d8d5e275188bc379fbdfd7c958bcd583690526dcb7e1bacaa90779858",
+        "signature": "e084da6d8d5e275188bc379fbdfd7c958bcd583690526dcb7e1bacaa90779858"
       },
       "/users/stevenyung/code/under-the-rug-cli/packages/khala/dist/index.d.ts": {
         "version": "f16ad3d465b5296d1f7d0e01724f71c22fa63b2b79b211dec916c4f93ac7dcc2",
         "signature": "f16ad3d465b5296d1f7d0e01724f71c22fa63b2b79b211dec916c4f93ac7dcc2"
       },
       "/users/stevenyung/code/under-the-rug-cli/packages/khala/dist/routes-resolver.d.ts": {
-        "version": "f3c2635bd2bc7ad4fa5428b2a86cfe73497f99655a633cae90de76aecc6d22e0",
-        "signature": "f3c2635bd2bc7ad4fa5428b2a86cfe73497f99655a633cae90de76aecc6d22e0"
+        "version": "62297172bff57313f205ba5afe8182fe16cfe8cf7cdf090c423a26658a7e56f7",
+        "signature": "62297172bff57313f205ba5afe8182fe16cfe8cf7cdf090c423a26658a7e56f7"
       },
       "/users/stevenyung/code/under-the-rug-cli/src/database/database.service.ts": {
         "version": "d1038f3d5313654bc7e7bf4d6f8371771f37cd91124b68cea1b126149e313c6b",
@@ -1290,7 +1290,7 @@
         "signature": "b9fa1534f20493672b6bd15fa14d2ffb56444ccba2294d4742283b5c73714900"
       },
       "/users/stevenyung/code/under-the-rug-cli/src/app.controller.ts": {
-        "version": "1827025f40be240f686b48f99d2254a061be9d774c194e45c6d3f603c7dc2f05",
+        "version": "374d481d9f403576b00c164922fe95177e8e4688f0843a7e7e3a088142c72e52",
         "signature": "8fbf56251ca69771d2ef81ad518f0dc5d2d0dea16d3bae57b7e6b90307a8b76f"
       },
       "/users/stevenyung/code/under-the-rug-cli/node_modules/@types/dotenv/index.d.ts": {
@@ -1306,7 +1306,7 @@
         "signature": "b82491e2990291580288c5602d4c017238977749d52b17391f0e45d9a29be644"
       },
       "/users/stevenyung/code/under-the-rug-cli/src/main.ts": {
-        "version": "08c0cead03791e9a7355169ae4126ffd05865112c721b7893abbea2b67d376de",
+        "version": "1d28bab04c1362c047d5c42f70527e3563589a524c188146664788cfd9a35220",
         "signature": "8e609bb71c20b858c77f0e9f90bb1319db8477b13f9f965f1a1e18524bf50881"
       },
       "/users/stevenyung/code/under-the-rug-cli/node_modules/@types/connect/index.d.ts": {
@@ -3215,6 +3215,8 @@
         "/users/stevenyung/code/under-the-rug-cli/node_modules/commander/typings/index.d.ts",
         "/users/stevenyung/code/under-the-rug-cli/node_modules/@nestjs/core/index.d.ts",
         "/users/stevenyung/code/under-the-rug-cli/packages/khala/routes-resolver.ts",
+        "/users/stevenyung/code/under-the-rug-cli/node_modules/@nestjs/common/interfaces/nest-application-context-options.interface.d.ts",
+        "/users/stevenyung/code/under-the-rug-cli/node_modules/@nestjs/common/utils/shared.utils.d.ts",
         "/users/stevenyung/code/under-the-rug-cli/node_modules/@types/node/util.d.ts",
         "/users/stevenyung/code/under-the-rug-cli/node_modules/@types/node/ts3.2/util.d.ts"
       ],
@@ -3248,6 +3250,7 @@
         "/users/stevenyung/code/under-the-rug-cli/node_modules/@nestjs/core/scanner.d.ts",
         "/users/stevenyung/code/under-the-rug-cli/node_modules/@nestjs/core/metadata-scanner.d.ts",
         "/users/stevenyung/code/under-the-rug-cli/node_modules/@nestjs/core/errors/exceptions-zone.d.ts",
+        "/users/stevenyung/code/under-the-rug-cli/node_modules/@nestjs/common/index.d.ts",
         "/users/stevenyung/code/under-the-rug-cli/node_modules/@types/node/util.d.ts",
         "/users/stevenyung/code/under-the-rug-cli/node_modules/@types/node/ts3.2/util.d.ts"
       ],
@@ -5735,7 +5738,6 @@
       "/users/stevenyung/code/under-the-rug-cli/node_modules/@types/dotenv/index.d.ts",
       "/users/stevenyung/code/under-the-rug-cli/src/config/config.service.ts",
       "/users/stevenyung/code/under-the-rug-cli/src/app.module.ts",
-      "/users/stevenyung/code/under-the-rug-cli/src/main.ts",
       "/users/stevenyung/code/under-the-rug-cli/node_modules/@types/connect/index.d.ts",
       "/users/stevenyung/code/under-the-rug-cli/node_modules/@types/body-parser/index.d.ts",
       "/users/stevenyung/code/under-the-rug-cli/node_modules/@types/cookiejar/index.d.ts",
@@ -5747,7 +5749,8 @@
       "/users/stevenyung/code/under-the-rug-cli/node_modules/@types/jest/index.d.ts",
       "/users/stevenyung/code/under-the-rug-cli/node_modules/@types/json5/index.d.ts",
       "/users/stevenyung/code/under-the-rug-cli/node_modules/@types/superagent/index.d.ts",
-      "/users/stevenyung/code/under-the-rug-cli/node_modules/@types/supertest/index.d.ts"
+      "/users/stevenyung/code/under-the-rug-cli/node_modules/@types/supertest/index.d.ts",
+      "/users/stevenyung/code/under-the-rug-cli/src/main.ts"
     ]
   },
   "version": "3.4.3"

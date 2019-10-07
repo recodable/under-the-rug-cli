@@ -1238,7 +1238,7 @@
         "signature": "2e1f5b8537a4c411d551c421ab3af9d1c60fb29e4d4116cc493a6b3ef9ea5239"
       },
       "/users/stevenyung/code/under-the-rug-cli/packages/khala/khala-factory.ts": {
-        "version": "a45cbb1e5ee8bca9c6e97e6b4d6c95ee84668540fb34040d57e2d348bb3b013d",
+        "version": "46fb020ae6a2e551623c41038d5e8428dcc268184883e907d16570a73e68057c",
         "signature": "b96204745951228a0cdc822456c992a4a7508c31db64515219cdf03657a3b663"
       },
       "/users/stevenyung/code/under-the-rug-cli/packages/khala/khala-controller.decorator.ts": {
@@ -3196,6 +3196,7 @@
         "/users/stevenyung/code/under-the-rug-cli/node_modules/@nestjs/core/scanner.d.ts",
         "/users/stevenyung/code/under-the-rug-cli/node_modules/@nestjs/core/metadata-scanner.d.ts",
         "/users/stevenyung/code/under-the-rug-cli/node_modules/@nestjs/core/errors/exceptions-zone.d.ts",
+        "/users/stevenyung/code/under-the-rug-cli/node_modules/@nestjs/common/index.d.ts",
         "/users/stevenyung/code/under-the-rug-cli/node_modules/@types/node/util.d.ts",
         "/users/stevenyung/code/under-the-rug-cli/node_modules/@types/node/ts3.2/util.d.ts"
       ],
