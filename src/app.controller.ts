@@ -6,12 +6,18 @@ import { AppService } from './app.service';
 export class AppController {
   constructor(private readonly appService: AppService) {}
 
-  @Command('clean')
+  @Command({
+    signature: 'clean',
+    description: 'Clean up all the targeted directory.',
+  })
   clean() {
     this.appService.cleanup();
   }
 
-  @Command('add <path>')
+  @Command({
+    signature: 'add <path>',
+    description: 'Add a directory path to the target directory list.'
+  })
   add(path: string) {
     this.appService.add(path);
   }

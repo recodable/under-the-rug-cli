@@ -3,7 +3,7 @@ import { MetadataScanner } from '@nestjs/core/metadata-scanner';
 import { Injector } from '@nestjs/core/injector/injector';
 import { Controller } from '@nestjs/common/interfaces/controllers/controller.interface';
 import { InstanceWrapper } from '@nestjs/core/injector/instance-wrapper';
-import { SIGNATURE } from './constants';
+import { SIGNATURE, DESCRIPTION } from './constants';
 import { KhalaApplication } from './khala-application';
 import { isUndefined } from '@nestjs/common/utils/shared.utils';
 
@@ -104,6 +104,7 @@ export class RoutesResolver {
   ) {
     const targetCallback = instancePrototype[methodName];
     const routePath = Reflect.getMetadata(SIGNATURE, targetCallback);
+    const description = Reflect.getMetadata(DESCRIPTION, targetCallback);
     if (isUndefined(routePath)) {
       return null;
     }
@@ -116,6 +117,7 @@ export class RoutesResolver {
     //   : routePath.map(p => this.validateRoutePath(p));
     return {
       routePath,
+      description,
       targetCallback,
       methodName,
     };

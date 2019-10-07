@@ -1,6 +1,8 @@
-import { SIGNATURE } from './constants';
+import { SIGNATURE, DESCRIPTION } from './constants';
+
 export interface CommandOptions {
-  signature?: string;
+  signature: string;
+  description?: string;
 }
 
 export function Command(options: string | CommandOptions = '') {
@@ -9,7 +11,10 @@ export function Command(options: string | CommandOptions = '') {
     propertyKey: string,
     descriptor: PropertyDescriptor,
   ) {
-    // descriptor.enumerable = value;
-    Reflect.defineMetadata(SIGNATURE, options, descriptor.value);
+    if (typeof options === "string") {
+      options = { signature: options };
+    }
+    Reflect.defineMetadata(SIGNATURE, options.signature, descriptor.value);
+    Reflect.defineMetadata(DESCRIPTION, options.description, descriptor.value);
   };
 }

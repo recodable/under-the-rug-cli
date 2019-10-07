@@ -32,7 +32,11 @@ class KhalaApplication extends core_1.NestApplicationContext {
     addCommand(route, controllerName) {
         const controller = this.get(controllerName);
         const signature = [route.prefix, route.routePath].filter(v => v).join(':');
-        (signature ? this.instance.command(signature) : this.instance).action(controller[route.methodName].bind(controller));
+        const command = (signature ? this.instance.command(signature) : this.instance);
+        if (route.description) {
+            command.description(route.description);
+        }
+        command.action(controller[route.methodName].bind(controller));
         return this;
     }
 }

@@ -14,6 +14,7 @@ export declare class RoutesResolver {
     scanForPaths(instance: Controller, prototype?: any): any[];
     exploreMethodMetadata(instance: Controller, instancePrototype: any, methodName: string): {
         routePath: any;
+        description: any;
         targetCallback: any;
         methodName: string;
     };
