@@ -10,10 +10,10 @@ import * as path from 'path';
   controllers: [AppController],
   providers: [
     AppService,
-    {
-      provide: ConfigService,
-      useValue: new ConfigService(path.resolve(__dirname, '..', '.env')),
-    },
+    // {
+    //   provide: ConfigService,
+    //   useValue: new ConfigService(path.resolve(__dirname, '..', '.env')),
+    // },
     {
       provide: DatabaseService,
       useValue: new DatabaseService({
