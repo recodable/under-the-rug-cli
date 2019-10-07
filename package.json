@@ -4,6 +4,9 @@
   "description": "",
   "author": "",
   "license": "MIT",
+  "bin": {
+    "utr": "./dist/src/main.js"
+  },
   "scripts": {
     "build": "tsc -p tsconfig.build.json",
     "format": "prettier --write \"src/**/*.ts\"",
@@ -26,8 +29,8 @@
     "@types/dotenv": "^6.1.1",
     "commander": "^3.0.1",
     "dotenv": "^8.1.0",
-    "lowdb": "^1.0.0",
     "khala": "file:packages/khala",
+    "lowdb": "^1.0.0",
     "reflect-metadata": "^0.1.13",
     "rimraf": "^2.6.2",
     "rxjs": "^6.3.3"
