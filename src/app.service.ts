@@ -39,8 +39,13 @@ export class AppService {
   }
 
   public add(path: string) {
-    this.db.instance
-      .get('targetPaths')
+    const collection = this.db.instance.get('targetPaths')
+
+    if (collection.value().includes(path)) {
+      return console.log(`${path} already added!`);
+    }
+
+    collection
       .push(path)
       .write();
     console.log(`${path} added!`);
