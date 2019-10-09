@@ -9,5 +9,8 @@
   },
   "author": "",
   "license": "ISC",
-  "prettier": "@recodable/prettier-config"
+  "prettier": "@recodable/prettier-config",
+  "dependencies": {
+    "@recodable/prettier-config": "^1.0.0"
+  }
 }
