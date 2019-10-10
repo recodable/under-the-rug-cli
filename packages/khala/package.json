@@ -11,6 +11,15 @@
   "license": "ISC",
   "prettier": "@recodable/prettier-config",
   "dependencies": {
-    "@recodable/prettier-config": "^1.0.0"
+    "@nestjs/common": "^6.8.3",
+    "@nestjs/core": "^6.8.3",
+    "@recodable/prettier-config": "^1.0.0",
+    "@types/node": "^12.7.12",
+    "commander": "^3.0.2",
+    "prettier": "^1.18.2",
+    "reflect-metadata": "^0.1.13",
+    "ts-node": "^8.4.1",
+    "tslint": "^5.20.0",
+    "typescript": "^3.6.4"
   }
 }
