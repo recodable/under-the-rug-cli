@@ -1,4 +1,4 @@
-import { KhalaFactory } from 'khala';
+import { KhalaFactory } from '@recodable/khala';
 import { AppModule } from './app.module';
 
 async function bootstrap() {

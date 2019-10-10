@@ -1,5 +1,5 @@
-import { Controller } from 'khala';
-import { Command } from 'khala';
+import { Controller } from '@recodable/khala';
+import { Command } from '@recodable/khala';
 import { AppService } from './app.service';
 
 @Controller()
